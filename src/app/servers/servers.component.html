@@ -1,1 +1,11 @@
-<p>The serverS component inputed in app.compomemt.html!</p>
+<p>The serverS component inputed in servers.compomemt.html!</p>
+<label>Server name</label>
+<input type = text class = form-control (input) = onUpdateServerName($event)>
+<p>{{serverName }}</p>
+<button class ="btn btn-primary" [disabled] = "!allowNewServer" (click) = onCreateServer()>Add server</button>
+<p>{{ serverCreationStatus }}</p>
+<hr>
+<input type = text 
+class = form-control 
+[(ngModel)] =serverName>
+<p>{{serverName }}</p>
